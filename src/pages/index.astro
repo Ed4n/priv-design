@@ -1,0 +1,125 @@
+---
+import Box from "../components/Box.astro";
+import first from "../img/1.gif";
+import second from "../img/2.gif";
+import third from "../img/3.gif";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body
+    class="bg-black bg-gradient-to-r text-Cream p-12 flex justify-center items-center gap-7 text-xl"
+  >
+    <div
+      class="w-full max-w-[1600px] flex flex-col items-center justify-center gap-16"
+    >
+      <h1>Priv Design</h1>
+      <Box img={first.src}>
+        <h2>A Primera Vista</h2>
+        <p class="max-w-[600px]">
+          Toda la informacion que el creador necesite a un simple click. El
+          creador tendra una card principal en la cual podra ver la informacion
+          a primera instancia
+        </p>
+      </Box>
+
+      <section
+        class="flex gap-12 w-full justify-center lg:justify-between lg:items-start flex-col-reverse lg:flex-row"
+      >
+        <img class="object-contain max-w-[700px] o" src={second.src} alt="" />
+        <div class="">
+          <h2>Intefaz Dinamica</h2>
+          <p class="max-w-[600px]">
+            Se presenta una interfaz la cual podra crecer con el creador, en la
+            cual podra agregar mas informacion y mas secciones mediante vaya
+            necesitando su uso.
+          </p>
+        </div>
+      </section>
+
+      <Box img={third.src}>
+        <h2>Facil Acceso y Edicion</h2>
+        <p class="max-w-[600px]">
+          El creador podra acceder a su informacion y editarla de manera rapida
+          y sencilla, sin necesidad de tener que buscar en un menu o en una
+          seccion especifica. De esta forma la interfaz se adapta al creador y
+          no el a la interfaz.
+        </p>
+      </Box>
+
+      <footer class="flex flex-col gap-7">
+        <!-- Link -->
+        <div
+          class="group hover:bg-Cream hover:text-black px-7 py-2 border-Cream border-2 rounded-lg flex items-center gap-3 text-2xl cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="stroke-Cream group-hover:stroke-black transition-all"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+            <path
+              d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z"
+            ></path>
+            <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15"></path>
+          </svg>
+
+          <a
+            class=""
+            href="https://www.figma.com/proto/nRzdZKzVZBTCCSX76O25r7/Priv-Design?page-id=0%3A1&type=design&node-id=1-2&viewport=-2316%2C647%2C1.25&t=b0nTanUckW5EpfwE-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design"
+            target="_blank">Proyecto en Fimga</a
+          >
+        </div>
+
+        <!-- Mail -->
+        <div class="flex gap-3 items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-mail-filled"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#2c3e50"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z"
+              stroke-width="0"
+              fill="currentColor"></path>
+            <path
+              d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z"
+              stroke-width="0"
+              fill="currentColor"></path>
+          </svg>
+          <span>edgardo.avalencia@gmail.com</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style>
+  h1 {
+    @apply text-7xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+</style>

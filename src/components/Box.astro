@@ -1,0 +1,19 @@
+---
+const { img, side } = Astro.props;
+---
+
+<section
+  class:list={[
+    "flex gap-12 w-full justify-center lg:justify-between lg:items-start flex-col lg:flex-row",
+    side,
+  ]}
+>
+  <div>
+    <slot />
+  </div>
+  <img
+    class="object-contain max-w-[700px] w-full min-w-[350px]"
+    src={img}
+    alt=""
+  />
+</section>
